@@ -1,6 +1,6 @@
 {
   "name": "use-in-viewport-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A React hook to detect if an element is in the viewport",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
