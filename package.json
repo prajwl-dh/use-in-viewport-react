@@ -1,23 +1,31 @@
 {
   "name": "use-in-viewport-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React hook to detect if an element is in the viewport",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "publish": "npm run build && npm publish",
-    "prepublishOnly": "npm run build"
+    "publish": "npm run build && npm publish"
   },
   "keywords": [
     "react",
+    "react-in-viewport",
     "hook",
+    "observer",
     "intersection-observer",
-    "viewport"
+    "viewport",
+    "viewport detect",
+    "react viewport"
   ],
   "author": "Prajwal Dhungana",
   "license": "MIT",
+  "homepage": "https://github.com/prajwl-dh/use-in-viewport-react",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prajwl-dh/use-in-viewport-react.git"
+  },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
