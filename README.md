@@ -30,7 +30,9 @@ import { useInViewportReact } from 'use-in-viewport-react';
 
 function App() {
   const ref = useRef<HTMLDivElement>(null);
-  const isInViewport = useInViewportReact(ref, { rootMargin: '-200px' });
+  const isInViewport = useInViewportReact(ref, {
+    threshold: 1,
+  });
 
   return (
     <div>
