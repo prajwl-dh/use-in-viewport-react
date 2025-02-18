@@ -1,6 +1,8 @@
 # use-in-viewport-react
 
-### **[Live Demo](https://stackblitz.com/edit/vitejs-vite-xwfgh6ze?file=src%2FApp.tsx)**
+### **[Live Demo - Click Here](https://stackblitz.com/edit/vitejs-vite-xwfgh6ze?file=src%2FApp.tsx)**
+
+![](https://github.com/prajwl-dh/use-in-viewport-react/blob/main/demo.gif)
 
 A lightweight and performant **React hook** to check if an element is in the **viewport** using the **Intersection Observer API**. This hook allows you to easily track an element’s visibility and trigger UI updates, animations, lazy loading, or other effects when an element enters or leaves the viewport.
 
