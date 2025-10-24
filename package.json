@@ -1,13 +1,33 @@
 {
   "name": "use-in-viewport-react",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A React hook to detect if an element is in the viewport",
-  "main": "dist/index.js",
+  "type": "module",
+  "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
   "scripts": {
-    "build": "tsc && rollup -c",
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsdown",
+    "dev": "tsdown --watch",
+    "typecheck": "tsc --noEmit",
     "publish": "npm run build && npm publish"
+  },
+  "author": "Prajwal Dhungana",
+  "license": "MIT",
+  "homepage": "https://github.com/prajwl-dh/use-in-viewport-react",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prajwl-dh/use-in-viewport-react.git"
   },
   "keywords": [
     "react",
@@ -19,30 +39,16 @@
     "viewport detect",
     "react viewport"
   ],
-  "author": "Prajwal Dhungana",
-  "license": "MIT",
-  "homepage": "https://github.com/prajwl-dh/use-in-viewport-react",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/prajwl-dh/use-in-viewport-react.git"
-  },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
-  "type": "module",
-  "files": [
-    "dist"
-  ],
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^28.0.2",
-    "@rollup/plugin-node-resolve": "^16.0.0",
-    "@rollup/plugin-typescript": "^12.1.2",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
-    "eslint": "^9.20.1",
-    "rollup": "^4.34.6",
-    "tslib": "^2.8.1",
-    "typescript": "^5.7.3"
+    "bumpp": "^10.3.1",
+    "rimraf": "^6.0.1",
+    "tsdown": "^0.15.6",
+    "typescript": "^5.9.3"
   }
 }
